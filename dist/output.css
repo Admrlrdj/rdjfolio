@@ -1361,6 +1361,16 @@ body {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
+:is(.dark .dark\:hover\:border-tertiary:hover) {
+  --tw-border-opacity: 1;
+  border-color: rgb(153 217 234 / var(--tw-border-opacity));
+}
+
+:is(.dark .dark\:hover\:bg-tertiary:hover) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(153 217 234 / var(--tw-bg-opacity));
+}
+
 @media (min-width: 640px) {
   .sm\:text-4xl {
     font-size: 2.25rem;
