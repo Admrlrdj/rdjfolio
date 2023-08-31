@@ -45,23 +45,3 @@ darkToggle.addEventListener('click', function () {
         localStorage.theme('light');
     }
 });
-
-//Toggle Position Based on Mode
-if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-    darkToggle.checked = true;
-} else {
-    darkToggle.checked = false;
-}
-
-//Modal Maintenance
-const modal = document.getElementById('modal');
-const closeModalButton = document.getElementById('closeModal');
-const kirimButton = document.getElementById('kirim');
-
-kirimButton.addEventListener('click', function () {
-    modal.style.display = 'flex';
-});
-
-closeModalButton.addEventListener('click', function () {
-    modal.style.display = 'none';
-});

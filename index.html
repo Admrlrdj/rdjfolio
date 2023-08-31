@@ -6,14 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dist/output.css">
     <title>Rdjadmrl</title>
-    <script>
-        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia(
-                '(prefers-color-scheme: dark)').matches)) {
-            document.documentElement.classList.add('dark');
-        } else {
-            document.documentElement.classList.remove('dark');
-        }
-    </script>
+    <!-- Countdown -->
+    <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
+    <script src="countdown/simplyCountdown.min.js"></script>
 </head>
 
 <body>
@@ -52,6 +47,11 @@
                             <li class="group">
                                 <a href="#clients"
                                     class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Clients</a>
+                            </li>
+                            <li class="group">
+                                <a href="#jkt48"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">JKT48
+                                    Info</a>
                             </li>
                             <li class="group">
                                 <a href="#blog"
@@ -305,35 +305,50 @@
                         class="max-w-[100px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
                         <img src="dist/img/UEFA.png" alt="UEFA">
                     </a>
-                    <a href="https://www.uefa.com/uefachampionsleague/" target="_blank"
-                        class="max-w-[140px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-                        <img src="dist/img/UCL.png" alt="UCL">
-                    </a>
-                    <a href="https://www.uefa.com/uefaeuropaleague/" target="_blank"
-                        class="max-w-[100px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-                        <img src="dist/img/UEL.png" alt="UEL">
-                    </a>
-                    <a href="https://www.uefa.com/uefaeuropaconferenceleague/" target="_blank"
-                        class="max-w-[90px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-                        <img src="dist/img/UECL.png" alt="UECL">
-                    </a>
-                    <a href="https://www.laliga.com/en-GB" target="_blank"
-                        class="max-w-[100px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-                        <img src="dist/img/Laliga.png" alt="Laliga">
-                    </a>
                     <a href="https://www.realmadrid.com/id" target="_blank"
                         class="max-w-[100px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
                         <img src="dist/img/Madrid.png" alt="Real Madrid">
                     </a>
-                    <a href="https://www.football-espana.net/" target="_blank"
+                    <a href="https://www.ea.com/games/ea-sports-fc" target="_blank"
                         class="max-w-[100px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-                        <img src="dist/img/Spain.png" alt="Spain Football">
+                        <img src="dist/img/easports.png" alt="Spain Football">
+                    </a>
+                    <a href="https://jkt48.com/" target="_blank"
+                        class="max-w-[100px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+                        <img src="dist/img/jkt48.png" alt="Spain Football">
                     </a>
                 </div>
             </div>
         </div>
     </section>
     <!-- Clients Section End-->
+
+    <section id="jkt48" class="pt-36 pb-32 bg-white dark:bg-dark">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="mx-auto text-center mb-16">
+                    <h4 class="font-semibold text-lg text-primary mb-2 dark:text-tertiary">JKT48 Info</h4>
+                    <p class="font-medium text-md text-dark md:text-lg dark:text-quaternary">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam voluptates corporis sit?
+                    </p>
+                </div>
+            </div>
+            <div class="mx-auto text-center mb-16">
+                <h5 class="font-bold text-dark text-xl mb-5 lg:text-2xl dark:text-white">JKT48 12th Anniversary</h5>
+                <div id="countdown1" class="simply-countdown text-white"></div><br><br>
+
+                <h5 class="font-bold text-dark text-xl mb-5 lg:text-2xl dark:text-white">Birthday in September</h5>
+                <p class="font-medium text-xl text-dark md:text-2xl dark:text-quaternary">Jesslyn Elly</p>
+                <div id="countdown2" class="simply-countdown text-white"></div><br>
+
+                <p class="font-medium text-xl text-dark md:text-2xl dark:text-quaternary">Jessica Chandra</p>
+                <div id="countdown3" class="simply-countdown text-white"></div><br>
+
+                <p class="font-medium text-xl text-dark md:text-2xl dark:text-quaternary">Yessica Tamara</p>
+                <div id="countdown4" class="simply-countdown text-white"></div><br>
+            </div>
+        </div>
+    </section>
 
     <!-- Blog Section Start -->
     <section id="blog" class="bg-slate-100 pt-36 pb-3 dark:bg-dark">
@@ -457,7 +472,7 @@
                             <p class="mb-6 text-base font-medium text-dark dark:text-white">
 
 
-                                Hi everyone! I’m Timothy Abel, Producer of Clubs, and with me, I have my fellow Producer
+                                Hi everyone! I'm Timothy Abel, Producer of Clubs, and with me, I have my fellow Producer
                                 Brendan Douglas. It's a year of new beginnings with EA SPORTS FC™ 24, and to that...</p>
                             <a href="https://www.ea.com/games/ea-sports-fc/fc-24/news/fc-24-clubs-deep-dive"
                                 target="_blank" class="rounded-lg bg-primary py-2 px-4 text-sm font-medium text-white
@@ -469,19 +484,19 @@
                 <!--Sixth Blog Start-->
                 <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
                     <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-dark dark:shadow-slate-800">
-                        <img src="https://jkt48.com/images/banner.home.gen12-ausition.jpg"
-                            alt="JKT48 Announcement Gen 12" class="w-full" />
+                        <img src="https://jkt48.com/upload/news/64eeecce9698a.png" alt="JKT48 Announcement Gen 12"
+                            class="w-full" />
                         <div class="py-8 px-6">
                             <h3>
-                                <a href="https://jkt48.com/gen12-audition" target="_blank" class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary
-                                    dark:text-white">Pengumuman Mengenai Audisi JKT48 Generasi Ke-12</a>
+                                <a href="https://jkt48.com/news/detail/id/1701?lang=id" target="_blank" class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary
+                                    dark:text-white">Pengumuman Mengenai Launching Aplikasi Baru JKT48 Private
+                                    Message</a>
                             </h3>
-                            <p class="mb-6 text-base font-medium text-dark dark:text-white">Terima kasih atas
-                                dukungannya untuk JKT48.
-
-                                Seperti yang telah diumumkan pada pertunjukan setlist Aitakatta...
+                            <p class="mb-6 text-base font-medium text-dark dark:text-white">
+                                Berkat dukungan semuanya, layanan JKT48 Private Message dikenal dan digunakan oleh
+                                banyak orang. Melihat antusiasme yang begitu besar, kini JKT48 Private...
                             </p>
-                            <a href="https://jkt48.com/gen12-audition" target="_blank" class="rounded-lg bg-primary py-2 px-4 text-sm font-medium text-white
+                            <a href="https://jkt48.com/news/detail/id/1701?lang=id" target="_blank" class="rounded-lg bg-primary py-2 px-4 text-sm font-medium text-white
                                 hover:opacity-80 dark:bg-tertiary">Read More &rarr;</a>
                         </div>
                     </div>
@@ -701,6 +716,7 @@
     <!-- Back to top End -->
 
     <script src="dist/js/script.js"></script>
+    <!-- Suggestion Form -->
     <script>
         window.addEventListener("load", function () {
             const form = document.getElementById('my-form');
@@ -717,6 +733,101 @@
                     })
             });
         });
+    </script>
+    <!-- Simply Coundown -->
+    <script>
+        simplyCountdown('#countdown1', {
+                year: 2023, // required
+                month: 9, // required
+                day: 8, // required
+                words: { //words displayed into the countdown
+                    days: {
+                        singular: 'day',
+                        plural: ' days'
+                    },
+                    hours: {
+                        singular: 'hour',
+                        plural: ' hours'
+                    },
+                    minutes: {
+                        singular: 'minute',
+                        plural: ' minutes'
+                    },
+                    seconds: {
+                        singular: 'second',
+                        plural: ' seconds'
+                    }
+                },
+            }),
+            simplyCountdown('#countdown2', {
+                year: 2023, // required
+                month: 9, // required
+                day: 13, // required
+                words: { //words displayed into the countdown
+                    days: {
+                        singular: 'day',
+                        plural: ' days'
+                    },
+                    hours: {
+                        singular: 'hour',
+                        plural: ' hours'
+                    },
+                    minutes: {
+                        singular: 'minute',
+                        plural: ' minutes'
+                    },
+                    seconds: {
+                        singular: 'second',
+                        plural: ' seconds'
+                    }
+                },
+            }),
+            simplyCountdown('#countdown3', {
+                year: 2023, // required
+                month: 9, // required
+                day: 23, // required
+                words: { //words displayed into the countdown
+                    days: {
+                        singular: 'day',
+                        plural: ' days'
+                    },
+                    hours: {
+                        singular: 'hour',
+                        plural: ' hours'
+                    },
+                    minutes: {
+                        singular: 'minute',
+                        plural: ' minutes'
+                    },
+                    seconds: {
+                        singular: 'second',
+                        plural: ' seconds'
+                    }
+                },
+            }),
+            simplyCountdown('#countdown4', {
+                year: 2023, // required
+                month: 9, // required
+                day: 24, // required
+                words: { //words displayed into the countdown
+                    days: {
+                        singular: 'day',
+                        plural: ' days'
+                    },
+                    hours: {
+                        singular: 'hour',
+                        plural: ' hours'
+                    },
+                    minutes: {
+                        singular: 'minute',
+                        plural: ' minutes'
+                    },
+                    seconds: {
+                        singular: 'second',
+                        plural: ' seconds'
+                    }
+                },
+            })
     </script>
 </body>
 
